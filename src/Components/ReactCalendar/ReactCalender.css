@@ -1,0 +1,20 @@
+.rbc-month-header {
+  display: flex;
+  flex-direction: row;
+  background: #40282c;
+  padding: 10px;
+  color: white;
+}
+.rbc-header {
+  border-bottom: none !important;
+}
+
+.rbc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+}
+.rbc-toolbar .rbc-toolbar-label {
+  text-align: right !important;
+  font-weight: 500;
+}
