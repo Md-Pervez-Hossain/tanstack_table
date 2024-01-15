@@ -33,6 +33,42 @@ const MultiStepper = () => {
   return (
     <div>
       <h2 className="text-center">Multi-step Form</h2>
+
+      <div className="flex items-center justify-between  relative">
+        <div className="h-[1px] border border-dashed border-gray-500  absolute w-full z-[-1] "></div>
+        <h2
+          className={`w-5 h-5 bg-gray-500 p-5 leading-5 rounded-full flex items-center justify-center  ${
+            page >= 1 ? "bg-green-500 text-white" : "text-white"
+          }`}
+          onClick={() => setPage(1)}
+        >
+          1
+        </h2>
+        <h2
+          className={`w-5 h-5 bg-gray-500 p-5 leading-5 rounded-full flex items-center justify-center ${
+            page >= 2 ? "bg-green-500 text-white" : "text-white"
+          }`}
+          onClick={() => setPage(2)}
+        >
+          2
+        </h2>
+        <h2
+          className={`w-5 h-5 bg-gray-500 p-5 leading-5 rounded-full flex items-center justify-center ${
+            page >= 3 ? "bg-green-500 text-white" : "text-white"
+          }`}
+          onClick={() => setPage(3)}
+        >
+          3
+        </h2>
+        <h2
+          className={`w-5 h-5 bg-gray-500 p-5 leading-5 rounded-full flex items-center justify-center ${
+            page >= 4 ? "bg-green-500 text-white" : "text-white"
+          }`}
+          onClick={() => setPage(4)}
+        >
+          4
+        </h2>
+      </div>
       <div className="flex justify-end">
         <p> Page {page}/4</p>
         {/* Display errors */}

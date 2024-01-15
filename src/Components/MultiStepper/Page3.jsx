@@ -11,7 +11,6 @@ const Page3 = ({ register }) => {
       setAddress(storedName);
     }
   }, [setAddress]);
-
   useEffect(() => {
     localStorage.setItem("formAddress", address);
   }, [address]);
